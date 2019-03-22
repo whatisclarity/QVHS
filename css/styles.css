@@ -1,0 +1,228 @@
+/* basics */
+body {
+  color: #666 !important;
+  font-family: helvetica, arial, sans-serif;
+}
+a:hover{
+  text-decoration: none;
+}
+.bg-primary,
+.btn-primary {
+  background-color: #39c !important;
+}
+.bg-primary-trans {
+  background-color: rgba(23,153,205,.8) !important;
+}
+.bg-light {
+  background-color: rgba(255,255,255,.8) !important;
+}
+a.bg-light:hover {
+  background-color: rgba(255,255,255,.85) !important;
+}
+.text-primary {
+  color: #1799cd !important;
+}
+.text-secondary {
+  color: #999 !important;
+}
+h1,h2,h3,h4,h5,h6 {
+  letter-spacing: -1px;
+}
+/* utilies */
+.sans-alt {
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+}
+.stretch {
+  display: block;
+  width: 100%;
+}
+.button {
+  background: #fff;
+  border: 1px solid #999;
+  border-radius: 5px;
+  color: #666;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1;
+  padding: 10px 15px;
+}
+.page {
+  position: relative;
+}
+.page.full {
+  min-height: 100vh;
+}
+.feature {
+  font-family: georgia, serif;
+  font-size: 18px;
+  font-style: italic;
+}
+.color-dots span {
+  color: #666;
+}
+/* top bar */
+#topBar {
+  box-shadow: 0 0 5px rgba(0,0,0,.2);
+  height: 70px;
+  top: 0;
+  left: 0 ;
+  right: 0;
+  z-index: 1000;
+}
+#topBar h1 a {
+  background: #f6f6f6 url(../img/QVHS_logo.jpg);
+  height: 70px;
+  width: 230px;
+}
+#topBar h2 {
+  font-size: 14px;
+  line-height: 1;
+  margin: 40px 10px 0;
+}
+#topBar .nav-toggle {
+  font-size: 30px;
+  line-height: 70px;
+  padding: 0 17px;
+}
+/* #topBar .nav-toggle {
+  transform: scaleX(1.5);
+  transform-origin: right;
+} */
+/* Main nav */
+#mainNav {
+  background: rgba(0,0,0,.4);
+  top: 70px;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0 10px;
+  height: 0;
+  transition: .2s ease-out;
+}
+.show-nav #mainNav {
+  height: auto;
+  opacity: 1;
+  padding: 80px 10px 10px;
+}
+.nav-toggle .open-it,
+.show-nav .nav-toggle .close-it {
+  display: inline-block;
+}
+.nav-toggle .close-it,
+.show-nav .nav-toggle .open-it {
+  display: none;
+}
+#mainNav a {
+  background: #9b3630;
+  color: #fff;
+  float: left;
+  padding: 30px 0;
+  text-align: center;
+  width: 20%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+#mainNav a:nth-child(odd) {
+  background: #872f2a;
+}
+#mainNav a.active{
+  background: #1799cd;
+}
+/* Home page */
+#home {
+  background: #a6a6a6 url(../img/home_bg.png) no-repeat center;
+  background-size: cover;
+  padding: 1rem;
+}
+#home h3 {
+  background-image: url(../img/corners.png), url(../img/corners.png);
+  background-position: 20px 20px, calc(100% - 20px) calc(100% - 20px);
+  background-repeat: no-repeat;
+  width: 470px;
+  color: #666;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -.5px;
+  margin: 135px 105px 120px 0;
+  padding: 40px;
+}
+#home h3 small {
+  display: block;
+  color: #39c;
+  font-weight: 700;
+  margin-top: 10px;
+  text-align: right;
+}
+#home nav {
+  clear: both;
+  padding-bottom: 40px;
+}
+#home nav > a {
+  /* height: 220px; */
+  box-shadow: 0 3px 3px rgba(0,0,0,.4);
+  width: 250px;
+  padding: 20px 20px 30px;
+  transition: .15s ease-out;
+}
+#home nav a b {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: block;
+  padding: 10px 0;
+}
+#home nav .icon {
+  /* border: 5px solid #c9c9c9;
+  border-radius: 100em; */
+  background-image: url(../img/icons.png);
+  display: block;
+  margin: 0 auto;
+  height: 98px;
+  width: 98px;
+}
+#home nav .icon.leadership {background-position: 0 -98px;}
+#home nav .icon.product {background-position: 0 -196px;}
+#home nav .icon.contact {background-position: 0 -294px;}
+
+/* Products page */
+.info-link {
+  bottom: 0;
+  left: 0;
+  width: 100%
+}
+/* Partners page */
+#partners {
+  background: #a6a6a6 url(../img/partners_bg.png) no-repeat center;
+  background-size: cover;
+  padding: 1rem;
+}
+/* Small-screen styles */
+@media (max-width: 650px) {
+  #home {
+    padding: 1rem;
+  }
+  #home h3 {
+    float: none !important;
+    font-size: 20px;
+    margin: 85px 0 20px;
+    width: 100%;
+  }
+  .show-nav #mainNav {
+    padding-top: 10px;
+  }
+  #mainNav a {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .border-sm-0 {
+    border: none !important;
+  }
+}
+@media (max-width: 991px) {
+  .border-md-0 {
+    border: none !important;
+  }
+}
