@@ -132,9 +132,10 @@ h1,h2,h3,h4,h5,h6 {
 }
 /* Home page */
 #home {
-  background: #a6a6a6 url(../img/home_bg.png) no-repeat center;
+  background: #a6a6a6 url(../img/home_bg.jpg) no-repeat center;
   background-size: cover;
   padding: 1rem;
+  min-height: 720px;
 }
 #home h3 {
   background-image: url(../img/corners.png), url(../img/corners.png);
@@ -157,12 +158,13 @@ h1,h2,h3,h4,h5,h6 {
 }
 #home nav {
   clear: both;
-  padding-bottom: 40px;
+  margin-top: 340px;
+  padding-bottom: 10px;
 }
 #home nav > a {
   /* height: 220px; */
   box-shadow: 0 3px 3px rgba(0,0,0,.4);
-  width: 250px;
+  width: 220px;
   padding: 20px 20px 30px;
   transition: .15s ease-out;
 }
@@ -182,8 +184,9 @@ h1,h2,h3,h4,h5,h6 {
   height: 98px;
   width: 98px;
 }
-#home nav .icon.leadership {background-position: 0 -98px;}
-#home nav .icon.product {background-position: 0 -196px;}
+#home nav .icon.about {background-position: 0 -98px;}
+#home nav .icon.leadership {background-position: 0 -196px;}
+/* #home nav .icon.product {background-position: 0 -196px;} */
 #home nav .icon.contact {background-position: 0 -294px;}
 
 /* Products page */
