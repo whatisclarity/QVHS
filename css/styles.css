@@ -47,6 +47,15 @@ h1,h2,h3,h4,h5,h6 {
   line-height: 1;
   padding: 10px 15px;
 }
+.button:hover {
+  color: #1799cd;
+}
+.toggler[aria-expanded="true"] .action::before {
+  content: 'Less';
+}
+.toggler[aria-expanded="false"] .action::before {
+  content: 'More';
+}
 .page {
   position: relative;
 }
@@ -78,7 +87,7 @@ h1,h2,h3,h4,h5,h6 {
 #topBar h2 {
   font-size: 14px;
   line-height: 1;
-  margin: 40px 10px 0;
+  margin: 38px 0 0 16px;
 }
 #topBar .nav-toggle {
   font-size: 30px;
