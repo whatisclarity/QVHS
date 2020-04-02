@@ -242,3 +242,13 @@ h1,h2,h3,h4,h5,h6 {
     border: none !important;
   }
 }
+/* Heading Icons */
+.add-icon {
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-left: 47px;
+  line-height: 40px;
+}
+.add-icon.mission {background-image: url(../img/icon_mission.png);}
+.add-icon.solutions {background-image: url(../img/icon_solutions.png);}
+.add-icon.approach {background-image: url(../img/icon_approach.png);}
